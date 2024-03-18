@@ -3,6 +3,7 @@
    https://www.dropbox.com/scl/fo/qzh04ic8qq91cxjkgq7g4/h?rlkey=gy191r7q76aufvj2kbfvcnxjv&dl=0
 
    **Root Password:** bu1234
+   The directories for the files are `Downloads/ch2/jiffies`, `Downloads/ch2/seconds` and `Downloads/ch2/pid_module`
 
 # TASK 1: Linux Kernel Modules for Jiffies and Seconds
 
