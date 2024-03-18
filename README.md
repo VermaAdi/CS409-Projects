@@ -54,8 +54,10 @@ This will output the command name, `PID`, and state of the task, similar to:
 When finished, unload the module from the kernel with:
    `sudo rmmod pid_module`
 
+## Test Cases and Expected Output
 
-![Screenshot (1)](https://github.com/VermaAdi/CS409-Projects/assets/97848600/ec6fee2e-a991-413d-aa61-a0887981bc56)
+![MicrosoftTeams-image](https://github.com/VermaAdi/CS409-Projects/assets/97848600/80fa4bdf-fa8b-4ccb-b287-6a6301d6ed7f)
+
 
 ## Contributors
 
