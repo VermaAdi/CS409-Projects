@@ -1,3 +1,53 @@
+# TASK 1: Linux Kernel Modules for Jiffies and Seconds
+
+## Project Overview
+
+This project involves the development and utilization of two Linux kernel modules: one that exposes the current value of jiffies (`jiffies.c`) and another that shows the elapsed time in seconds since it was loaded (`seconds.c`). Both modules make use of the `/proc` filesystem to communicate these values to user space. This README provides a detailed overview of each module's functionality, along with instructions for installation, usage, and testing. This is a joint effort by [Your Name], [Team Member's Name], and [Team Member's Name].
+
+## Features
+
+- **Jiffies Display:** Allows users to read the current value of jiffies from `/proc/jiffies`, offering insight into system ticks since boot.
+- **Seconds Elapsed Display:** Enables users to determine the number of seconds elapsed since the `seconds` module was loaded, accessible through `/proc/seconds`.
+- **Efficient Kernel Interaction:** Demonstrates efficient interaction with the Linux kernel and the `/proc` filesystem.
+
+## Installation
+
+### Prerequisites
+
+Ensure your Linux system has the necessary kernel development tools (`build-essential`, `linux-headers-$(uname -r)`).
+
+### Steps for jiffies.c and seconds.c
+
+#### jiffies.c
+
+1. **Prepare the Environment:** Navigate to the directory containing `jiffies.c` and the makefile.
+2. **Compile:** Ensure the makefile is prepared to compile `jiffies.o` and execute `make`.
+3. **Load the Module:** Use `sudo insmod jiffies.ko` to load the module.
+4. **Verify Creation:** Check the creation of `/proc/jiffies` file with `sudo dmesg -c`.
+5. **Read Jiffies Value:** Obtain the current jiffies value via `cat /proc/jiffies`.
+6. **Unload:** Remove the kernel module using `sudo rmmod jiffies`.
+7. **Confirm Removal:** Ensure `/proc/jiffies` is removed with `sudo dmesg -c`.
+
+#### seconds.c
+
+1. **Prepare the Environment:** Navigate to the directory containing `seconds.c` and the makefile.
+2. **Compile:** Verify the makefile targets `seconds.o` and run `make`.
+3. **Load the Module:** Insert the module with `sudo insmod seconds.ko`.
+4. **Verify Creation:** Ensure the `/proc/seconds` file is created with `sudo dmesg -c`.
+5. **Read Elapsed Time:** Access the elapsed time since module load via `cat /proc/seconds`.
+6. **Unload:** Remove the module with `sudo rmmod seconds`.
+7. **Confirm Removal:** Check removal confirmation with `sudo dmesg -c`.
+
+## Usage
+
+To interact with these modules, follow the installation and verification steps detailed above for each. The primary commands involve loading the module (`sudo insmod [module_name].ko`), reading the file created in `/proc` (`cat /proc/[filename]`), and unloading the module (`sudo rmmod [module_name]`).
+
+## Test Cases and Expected Output
+
+![MicrosoftTeams-image (3)](https://github.com/VermaAdi/CS409-Projects/assets/97848600/eae810be-e6be-45ef-8c26-ec73eed0c557)
+![MicrosoftTeams-image (4)](https://github.com/VermaAdi/CS409-Projects/assets/97848600/1d3d4995-4266-48d1-9979-b9736614d57f)
+
+
 # TASK 2: Linux Kernel Module for Task Information
 
 ## Project Overview
