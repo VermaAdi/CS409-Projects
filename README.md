@@ -21,4 +21,41 @@ This project involves the development of a Linux kernel module that enables the 
 1. **Download the Module Source Code:** Download `pid_module.c` from the provided source repository or attachment.
 
 2. **Compile the Module:**
-   Navigate to the directory containing `pid_module.c` and run the following commands to compile the module:
+   Navigate to the directory containing `pid_module.c` and run the following commands to compile the module.
+
+3. **Download the Makefile:** Download `Makefile` from the provided source repository or attachment.
+
+4. **Run `make` to compile `pid_module.c`**
+
+5. **Insert the Module:** Load the compiled module into the kernel with:
+   `sudo insmod pid_module.ko`
+
+## Usage
+
+### Writing a PID to `/proc/pid`
+
+Write a process ID to `/proc/pid` using the echo command:
+   `echo "1395" > /proc/pid`
+
+Replace `1395` with the `PID` of the task you wish to inquire about.
+
+### Reading Task Information from `/proc/pid`
+
+To display the task information, use the cat command:
+   `cat /proc/pid`
+
+This will output the command name, `PID`, and state of the task, similar to:
+`command = [bash]`
+`pid = [1395]`
+`state = [1]`
+
+## Unloading the Module
+
+When finished, unload the module from the kernel with:
+   `sudo rmmod pid_module`
+
+## Contributors
+
+- Aditya Verma
+- Liam Buck T.
+- Junwen Hu
