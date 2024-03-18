@@ -57,7 +57,8 @@ When finished, unload the module from the kernel with:
 ## Test Cases and Expected Output
 
 ![MicrosoftTeams-image](https://github.com/VermaAdi/CS409-Projects/assets/97848600/80fa4bdf-fa8b-4ccb-b287-6a6301d6ed7f)
-
+![MicrosoftTeams-image (1)](https://github.com/VermaAdi/CS409-Projects/assets/97848600/a0df938a-5140-481b-9782-fa790f7b3068)
+![MicrosoftTeams-image (2)](https://github.com/VermaAdi/CS409-Projects/assets/97848600/1d9cd473-44a3-4cbc-97d8-37908ef0cd7f)
 
 ## Contributors
 
