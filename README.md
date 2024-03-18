@@ -1,6 +1,6 @@
 # Dropbox Link for the Team's Linux Virtual Machine
 
-   https://teams.microsoft.com/l/message/19:921de781c2b6487c85ef7d411f846009@thread.v2/1710729464189?context=%7B%22contextType%22%3A%22chat%22%7D
+   https://www.dropbox.com/scl/fo/qzh04ic8qq91cxjkgq7g4/h?rlkey=gy191r7q76aufvj2kbfvcnxjv&dl=0
 
    **Root Password:** bu1234
 
